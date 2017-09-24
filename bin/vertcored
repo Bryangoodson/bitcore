@@ -7,7 +7,7 @@ if (parseInt(process.version.split('.')[0].slice(1)) < 8) {
 }
 
 var path = require('path');
-var bitcored = require('bitcore-node/lib/cli/bitcored');
+var vertcored = require('vertcore-node/lib/cli/bitcored');
 var servicesPath = path.resolve(__dirname, '../');
-var additionalServices = ['insight-api', 'insight-ui'];
-bitcored(servicesPath, additionalServices);
+var additionalServices = ['insight-vert-api', 'insight-vert-ui'];
+vertcored(servicesPath, additionalServices);

@@ -1,4 +1,4 @@
-Bitcore
+Vertcore
 =======
 
 [![NPM Package](https://img.shields.io/npm/v/bitcore.svg?style=flat-square)](https://www.npmjs.org/package/bitcore)
@@ -13,22 +13,22 @@ Infrastructure to build Bitcoin and blockchain-based applications for the next g
 Before you begin you'll need to have Node.js v8 installed. There are several options for installation. One method is to use [nvm](https://github.com/creationix/nvm) to easily switch between different versions, or download directly from [Node.js](https://nodejs.org/).
 
 ```bash
-npm install -g bitcore
+npm install -g vertcore
 ```
 
 Spin up a full node and join the network:
 
 ```bash
-npm install -g bitcore
-bitcored
+npm install -g vertcore
+vertcored
 ```
 
-You can then view the Insight block explorer at the default location: `http://localhost:3001/insight`, and your configuration file will be found in your home directory at `~/.bitcore`.
+You can then view the Insight block explorer at the default location: `http://localhost:3001/insight`, and your configuration file will be found in your home directory at `~/.vertcore`.
 
 Create a transaction:
 ```js
-var bitcore = require('bitcore');
-var transaction = new bitcore.Transaction();
+var vertcore = require('vertcore');
+var transaction = new vertcore.Transaction();
 var transaction.from(unspent).to(address, amount);
 transaction.sign(privateKey);
 ```
@@ -73,7 +73,7 @@ If you find a security issue, please email security@bitpay.com.
 
 Please send pull requests for bug fixes, code optimization, and ideas for improvement. For more information on how to contribute, please refer to our [CONTRIBUTING](https://github.com/bitpay/bitcore/blob/master/CONTRIBUTING.md) file.
 
-This will generate files named `bitcore.js` and `bitcore.min.js`.
+This will generate files named `vertcore.js` and `vertcore.min.js`.
 
 You can also use our pre-generated files, provided for each release along with a PGP signature by one of the project's maintainers. To get them, checkout a release commit (for example, https://github.com/bitpay/bitcore/commit/e33b6e3ba6a1e5830a079e02d949fce69ea33546 for v0.12.6).
 

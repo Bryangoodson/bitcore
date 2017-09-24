@@ -1,5 +1,5 @@
 
 
-var bitcoreTasks = require('bitcore-build');
+var vertcoreTasks = require('vertcore-build');
 
-bitcoreTasks();
+vertcoreTasks();
